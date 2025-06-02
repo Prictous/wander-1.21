@@ -1,0 +1,26 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "wander:block/soft_grass_block"
+      },
+      {
+        "model": "wander:block/soft_grass_block",
+        "y": 90
+      },
+      {
+        "model": "wander:block/soft_grass_block",
+        "y": 180
+      },
+      {
+        "model": "wander:block/soft_grass_block",
+        "y": 270
+      }
+    ],
+    "snowy=true": [
+      {
+      "model": "wander:block/soft_grass_block_snowy"
+      }
+    ]
+  }
+}

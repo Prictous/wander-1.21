@@ -1,5 +1,8 @@
 package net.ashgrove.wander;
 
+import net.ashgrove.wander.block.ModBlocks;
+import net.ashgrove.wander.item.ModItemGroups;
+import net.ashgrove.wander.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +15,8 @@ public class Wander implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
