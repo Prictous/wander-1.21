@@ -1,32 +1,43 @@
 package net.ashgrove.wander.block;
 
+import com.mojang.serialization.MapCodec;
 import net.ashgrove.wander.Wander;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.GrassBlock;
-import net.minecraft.block.MapColor;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
+import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 
 public class ModBlocks {
 
 
     public static final Block SOFT_GRASS_BLOCK = registerBlock("soft_grass_block",
-          new GrassBlock(AbstractBlock.Settings.create()
-                  .mapColor(MapColor.TERRACOTTA_GREEN)
-                  .ticksRandomly()
-                  .strength(0.5f)
-                  .requiresTool()
-                  .sounds(BlockSoundGroup.GRASS)
-                  ));
+            new ModSpreadableBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.TERRACOTTA_GREEN)
+                    .ticksRandomly()
+                    .strength(0.5f)
+                    .sounds(BlockSoundGroup.GRASS)
+            ) {
+                @Override
+                protected MapCodec<? extends SpreadableBlock> getCodec() {
+                    return null;
+                }
+            });
+    public static final Block LOAMY_DIRT_BLOCK = registerBlock("loamy_dirt_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.BROWN)
+                    .strength(0.4f)
+                    .sounds(BlockSoundGroup.GRAVEL)
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.TEST_ITEM);
                         entries.add(ModBlocks.SOFT_GRASS_BLOCK);
+                        entries.add(ModBlocks.LOAMY_DIRT_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {

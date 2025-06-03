@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "wander:block/loamy_dirt_block"
+      },
+      {
+        "model": "wander:block/loamy_dirt_block",
+        "y": 90
+      },
+      {
+        "model": "wander:block/loamy_dirt_block",
+        "y": 180
+      },
+      {
+        "model": "wander:block/loamy_dirt_block",
+        "y": 270
+      }
+    ]
+  }
+}
