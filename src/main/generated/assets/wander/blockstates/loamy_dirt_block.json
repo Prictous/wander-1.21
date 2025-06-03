@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "wander:block/loamy_dirt_block"
+    }
+  }
+}

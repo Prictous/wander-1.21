@@ -1,9 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "wander:block/loamy_dirt_block",
-    "particle": "wander:block/loamy_dirt_block",
-    "side": "wander:block/loamy_dirt_block",
-    "top": "wander:block/loamy_dirt_block"
-  }
-}

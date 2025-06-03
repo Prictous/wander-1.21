@@ -19,7 +19,7 @@
     ],
     "snowy=true": [
       {
-      "model": "wander:block/soft_grass_block_snowy"
+        "model": "wander:block/soft_grass_block_snowy"
       }
     ]
   }
