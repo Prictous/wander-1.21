@@ -1,7 +1,7 @@
 {   "parent": "block/grass_block",
   "textures": {
     "particle": "block/dirt",
-    "bottom": "minecraft:block/dirt",
+    "bottom": "wander:block/loamy_dirt_block",
     "top": "wander:block/soft_grass_block_top",
     "side": "wander:block/soft_grass_block_side",
     "overlay": "wander:block/soft_grass_block_side_overlay"
