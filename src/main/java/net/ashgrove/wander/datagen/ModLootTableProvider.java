@@ -16,5 +16,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(ModBlocks.SOFT_GRASS_BLOCK, dropsWithSilkTouch(ModBlocks.SOFT_GRASS_BLOCK));
         addDrop(ModBlocks.LOAMY_DIRT_BLOCK);
+        addDrop(ModBlocks.ROSE_QUARTZ_BLOCK);
     }
 }

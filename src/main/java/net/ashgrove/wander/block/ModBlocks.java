@@ -38,6 +38,12 @@ public class ModBlocks {
                     .strength(0.4f)
                     .sounds(BlockSoundGroup.GRAVEL)
             ));
+    public static final Block ROSE_QUARTZ_BLOCK = registerBlock("rose_quartz_block",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PINK)
+                    .strength(0.6f)
+                    .sounds(BlockSoundGroup.STONE)
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -21,5 +21,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.DIRT)
                 .add(ModBlocks.SOFT_GRASS_BLOCK)
                 .add(ModBlocks.LOAMY_DIRT_BLOCK);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.ROSE_QUARTZ_BLOCK);
     }
 }

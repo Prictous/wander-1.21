@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TEST_ITEM);
                         entries.add(ModBlocks.SOFT_GRASS_BLOCK);
                         entries.add(ModBlocks.LOAMY_DIRT_BLOCK);
+                        entries.add(ModBlocks.ROSE_QUARTZ_BLOCK);
                     }).build());
 
     public static void registerItemGroups() {
