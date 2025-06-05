@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item TEST_ITEM = registerItem("test_item", new Item(new Item.Settings()));
+    public static final Item RAW_ROSE_QUARTZ = registerItem("raw_rose_quartz", new Item(new Item.Settings()));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Wander.MOD_ID, name), item);
@@ -20,7 +20,7 @@ public class ModItems {
         Wander.LOGGER.info("Registering Items for " + Wander.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TEST_ITEM);
+            entries.add(RAW_ROSE_QUARTZ);
         });
     }
 }

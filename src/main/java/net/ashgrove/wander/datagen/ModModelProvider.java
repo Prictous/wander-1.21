@@ -17,10 +17,11 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LOAMY_DIRT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ROSE_QUARTZ_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NETHER_ROSE_QUARTZ_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.TEST_ITEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ROSE_QUARTZ, Models.GENERATED);
     }
 }

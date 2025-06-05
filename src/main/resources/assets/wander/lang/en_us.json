@@ -1,6 +1,8 @@
 {
   "itemgroup.wander.wander_items": "Wander",
-  "item.wander.test_item": "Test Item",
+  "item.wander.raw_rose_quartz": "Raw Rose Quartz",
   "block.wander.soft_grass_block": "Soft Grass Block",
-  "block.wander.loamy_dirt_block": "Loamy Dirt Block"
+  "block.wander.loamy_dirt_block": "Loamy Dirt Block",
+  "block.wander.rose_quartz_block": "Rose Quartz Block",
+  "block.wander.raw_nether_rose_quartz_ore": "Raw Nether Rose Quartz Ore"
 }

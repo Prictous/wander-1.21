@@ -44,6 +44,12 @@ public class ModBlocks {
                     .strength(0.6f)
                     .sounds(BlockSoundGroup.STONE)
             ));
+    public static final Block RAW_NETHER_ROSE_QUARTZ_ORE = registerBlock("raw_nether_rose_quartz_ore",
+            new Block(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PINK)
+                    .strength(0.3f)
+                    .sounds(BlockSoundGroup.STONE)
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
